@@ -36,6 +36,12 @@ nav{display:flex;gap:22px;flex-wrap:wrap}
 nav a{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);transition:color .2s}
 nav a:hover,nav a:focus-visible{color:var(--fg)}
 @media (max-width:640px){nav{display:none}}
+.lang{display:flex;gap:8px;align-items:center;font:500 12px/1 var(--mono);letter-spacing:.12em;color:var(--muted)}
+.lang a{color:var(--muted);transition:color .2s}
+.lang a:hover,.lang a:focus-visible{color:var(--fg)}
+.lang .on{color:var(--fg)}
+.hright{display:flex;align-items:center;gap:28px}
+
 
 /* первый экран */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
@@ -151,6 +157,7 @@ footer .note{font:500 11px/1.6 var(--mono);letter-spacing:.08em;text-transform:u
 <header class="top">
   <div class="wrap">
     <a class="mark" href="#top">My Workshop<b>.</b></a>
+    <div class="hright">
     <nav aria-label="Sections">
       <a href="#podcasts">Podcasts</a>
       <a href="#reels">Reels</a>
@@ -158,6 +165,8 @@ footer .note{font:500 11px/1.6 var(--mono);letter-spacing:.08em;text-transform:u
       <a href="#ai">AI Video</a>
       <a href="https://t.me/cinemalife_k" target="_blank" rel="noopener" style="color:var(--fg)">Telegram</a>
     </nav>
+    <div class="lang"><a href="../" hreflang="ru" lang="ru">RU</a><span aria-hidden="true">/</span><span class="on">EN</span></div>
+    </div>
   </div>
 </header>
 
